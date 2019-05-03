@@ -176,6 +176,7 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
 }
 .nav-bar {
   display: flex;
@@ -185,6 +186,8 @@ p {
   padding-top: 15px;
   padding-bottom: 10px;
   background-color: #F6F6F6;
+  position: fixed;
+  opacity: 0.9;
   width: 100%;
 }
 .nav-bar h1 {
