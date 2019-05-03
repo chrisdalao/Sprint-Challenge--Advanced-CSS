@@ -1,9 +1,10 @@
 // Mixins Here
 
-.sign-up-btn(@bgcolor, @height, @width, @color, @corners, @fontsize, @align, @padding) {
+.sign-up-btn(@bgcolor, @height, @width, @max-width, @color, @corners, @fontsize, @align, @padding) {
     background-color: @bgcolor;
     height          : @height;
     width           : @width;
+    max-width:  @max-width;
     color           : @color;
     border-radius   : @corners;
     font-size       : @fontsize;
@@ -11,7 +12,21 @@
     padding         : @padding;
 }
 
-
 .btn {
-    .sign-up-btn(#22283A, 35px, 30%, white, 5px, 1.8rem, center, 8px);
+    .sign-up-btn(#22283A, 35px, 100%, 100px, white, 5px, 1.8rem, center, 8px);
 }
+
+.inverse-sign-up-button(@bgcolor, @color){
+    background-color: @bgcolor;
+    color: @color;
+}
+
+.large-img-border-radius{
+    border-radius: 4px;
+}
+
+.full-width{
+        width: @full-width;
+}
+
+
